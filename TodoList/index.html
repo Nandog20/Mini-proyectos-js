@@ -1,26 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO Board</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./main.js" defer></script>
-</head>
-<body>
-    <head>
+  </head>
+  <body>
+    <main>
+      <header>
         <h1>TODO board</h1>
-    </head>
-    <section>
+      </header>
+      <section>
         <form id="task-form">
-            <label for="task-input"></label>
-            <input type="text" id="task-input" name="task-input" placeholder="Agregar tarea 1" required>
-            <button type="submit">Agregar tarea</button>
+          <label for="task-input"></label>
+          <input
+            type="text"
+            id="task-input"
+            name="task-input"
+            placeholder="Agregar tarea 1"
+            required
+          />
+          <button type="submit">Agregar tarea</button>
         </form>
-    </section>
-    <section>
-        <ul id="task-board">
-        </ul>
-    </section>
-</body>
+      </section>
+      <section id="task-board"></section>
+    </main>
+  </body>
 </html>
